@@ -33,4 +33,29 @@ module.exports = (robot) => {
         const json = JSON.stringify(config.aircon.off);
         return requestToIrkit(robot, msg, json);
     });
+
+    robot.respond(/LIGHT/i, (msg) => {
+        const json = JSON.stringify(config.light.up);
+        return requestToIrkit(robot, msg, json);
+    });
+
+    robot.respond(/FAN ON/i, (msg) => {
+        const json = JSON.stringify(config.fan.on);
+        return requestToIrkit(robot, msg, json);
+    });
+
+    robot.respond(/FAN OFF/i, (msg) => {
+        const json = JSON.stringify(config.fan.off);
+        return requestToIrkit(robot, msg, json);
+    });
+
+    robot.respond(/FAN SWING/i, (msg) => {
+        const json = JSON.stringify(config.fan.swing);
+        return requestToIrkit(robot, msg, json);
+    });
+
+    robot.respond(/FAN POWER/i, (msg) => {
+        const json = JSON.stringify(config.fan.powerUp);
+        return requestToIrkit(robot, msg, json);
+    });
 };
