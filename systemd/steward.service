@@ -1,0 +1,12 @@
+[Unit]
+Description=Steward for me
+
+[Service]
+ExecStart=make -C /opt/steward start
+Restart=always
+Type=forking
+PIDFile=/var/run/steward.pid
+
+[Install]
+WantedBy=multi-user.target
+Alias=steward.service
