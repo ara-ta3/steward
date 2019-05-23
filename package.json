@@ -5,7 +5,7 @@
   "author": "Arata Tanaka <tarata43@yahoo.co.jp>",
   "description": " ",
   "dependencies": {
-    "config": "^1.21.0",
+    "config": "^3.1.0",
     "hubot": "^2.19.0",
     "hubot-diagnostics": "0.0.1",
     "hubot-help": "^0.2.0",
