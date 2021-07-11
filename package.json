@@ -9,6 +9,7 @@
     "hubot": "^2.19.0",
     "hubot-diagnostics": "0.0.1",
     "hubot-help": "^0.2.0",
+    "hubot-jenkins": "^1.0.2",
     "hubot-slack": "^4.0.2"
   },
   "engines": {
